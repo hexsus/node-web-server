@@ -43,6 +43,10 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('/happy', (req, res)=>{
+    res.render('happy.hbs');
+});
+
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
         pageTitle: 'About page'
